@@ -1,0 +1,424 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+}
+:root {
+  --main-transition: ease-out 0.3s;
+}
+.container {
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 0;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #0077ff;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+::-webkit-scrollbar-track {
+  background-color: #ddd;
+}
+
+::selection {
+  color: white;
+  background-color: #347bb4;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+*,
+input {
+  outline: none;
+}
+
+/* Start Scroll Btn Style */
+.to-top-butotn {
+  width: 50px;
+  height: 50px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  position: fixed;
+  right: -50px;
+  bottom: 20px;
+  z-index: 100;
+  cursor: pointer;
+  display: none;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+.to-top-butotn:hover {
+  background-color: #0479d7;
+  color: wheat;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+
+.to-top-button .fa-long-arrow-alt-right {
+  color: white;
+  font-size: 18px;
+}
+
+/* End Scroll Btn Style*/
+
+/* Start Header Styles */
+.header {
+  background-color: white;
+  position: relative;
+  box-shadow: 0 0 10px #ddd;
+  -webkit-box-shadow: 0 0 10px #ddd;
+  -moz-box-shadow: 0 0 10px #ddd;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 90px;
+  position: relative;
+}
+.header .logo {
+  color: #2196f3;
+  font-size: 26px;
+  font-weight: bold;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header .main-nav > li > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  position: relative;
+  padding: 0 30px;
+  overflow: hidden;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #000;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.header .main-nav > li > a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #2196f3;
+  bottom: 0;
+  left: -100%;
+  text-transform: uppercase;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.header .main-nav > li > a:hover {
+  color: 2196f3;
+  background-color: #f9f9f9;
+}
+.header .main-nav > li > a:hover::before {
+  left: 0;
+}
+
+@media (max-width: 991px) {
+  .header .container {
+    padding: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .header .logo {
+    width: fit-content;
+    height: 110px;
+  }
+}
+@media (max-width: 991px) {
+  .header .logo {
+    margin: 0px auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .header .main-nav {
+    margin: auto;
+  }
+}
+@media (max-width: 767px) {
+  .header .main-nav > li > a {
+    padding: 10px;
+    font-size: 14px;
+    height: 40px;
+  }
+}
+
+.Saudi-electronic-visa,
+.available-countries {
+  margin: 100px auto;
+}
+.landing-section {
+  background-image: url("../imgs/landing-section.jpg");
+  background-size: cover;
+  object-fit: fill;
+  background-repeat: no-repeat;
+  height: calc(100vh - 90px);
+}
+
+.Saudi-electronic-visa h2,
+.available-countries h2 {
+  background-color: #ededed;
+  padding: 10px;
+  border-radius: 6px;
+  color: #2196f3;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+.Saudi-electronic-visa p,
+.available-countries p {
+  line-height: 1.8;
+  color: #333;
+}
+.contact-us h2 {
+  color: #2196f3;
+  padding: 10px 0;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+.countries-region-container {
+  margin: 50px auto;
+}
+.country-region-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 50px;
+  background-color: #ededed;
+}
+.country-region-head i {
+  color: #0077ff;
+}
+.countries-with-flags {
+  /* background-color: #d9d9d9; */
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 20px;
+}
+.countries-with-flags img {
+  width: 25px;
+  margin-right: 10px;
+}
+.country-region-head h3 {
+  color: #0077ff;
+}
+.country-with-flag {
+  display: flex;
+  align-items: center;
+  width: 150px;
+}
+.contact-us .intro {
+  line-height: 1.8;
+  color: #333;
+}
+.contact-method {
+  background-color: #347bb4;
+  color: white;
+  width: fit-content;
+  padding: 5px;
+  margin: 40px 0 20px 0;
+}
+
+.visas {
+  margin: 100px auto;
+  background-color: #ededed;
+}
+.visas-container {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1.8;
+}
+.rules-and-validity-side {
+  padding: 20px;
+  flex: 2;
+  margin: 70px auto;
+}
+.rules-and-validity-side h4 {
+  text-transform: capitalize;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.rules-and-validity-side .validity {
+  margin: 15px auto;
+}
+.rules-and-validity-side p,
+.details p {
+  text-transform: capitalize;
+  width: fit-content;
+  border-bottom: 1px dotted #000;
+  margin-bottom: 15px;
+}
+.visas-container .details {
+  padding: 20px;
+}
+.rules-and-validity-side ul,
+.details ul {
+  list-style: inside;
+  padding-left: 20px;
+}
+.rules-and-validity-side ul li,
+.details ul li {
+  width: fit-content;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+form input {
+  display: block;
+  background-color: #d9d9d9;
+  border: none;
+  width: 400px;
+  border-radius: 6px;
+  padding: 20px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+label {
+  color: #000;
+  font-size: 17px;
+  font-weight: 500;
+  width: fit-content;
+  text-transform: capitalize;
+}
+input[type="submit"] {
+  background-image: linear-gradient(to right, #7450fe, #21d397);
+  color: white;
+  width: 170px;
+  margin: 10px auto;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+form [type="file"] {
+  cursor: pointer;
+}
+
+/* contact us  */
+.contact-us i {
+  width: fit-content;
+  color: #6962f0;
+  font-size: 20px;
+  margin-right: 20px;
+}
+.contact-us li {
+  margin: 15px auto;
+  letter-spacing: 2px;
+}
+.contact-us li span {
+  color: #2196f3;
+}
+
+/* Start Footer */
+footer {
+  margin-top: 100px;
+  background-color: #ededed;
+}
+/* End Footer */
+
+/* Media Query */
+@media (max-width: 767px) {
+  .rules-and-validity-side {
+    padding: 10px;
+    flex: 2;
+    margin: 30px auto;
+  }
+  .rules-and-validity-side h4 {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+  .Saudi-electronic-visa h2,
+  .available-countries h2 {
+    margin-bottom: 10px;
+    letter-spacing: 0px;
+    font-size: 17px;
+  }
+  .contact-us {
+    text-align: center;
+  }
+  .contact-method {
+    margin: 20px auto;
+  }
+}
