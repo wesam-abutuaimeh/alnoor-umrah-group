@@ -25,7 +25,9 @@ window.onscroll = function () {
 
 // email validate
 const email = document.querySelector(".email");
+let genderValidate = document.querySelector(".gender-input");
 const submit = document.querySelector(".submit");
+
 submit.onclick = (e) => {
   if (
     email.value.match(
@@ -33,10 +35,13 @@ submit.onclick = (e) => {
     )
   ) {
     return true;
-  } else {
-    e.preventDefault();
   }
+
+  e.preventDefault();
 };
+
 //  increace year copyright per year auto
-const copyrightYear = new Date().getFullYear();
-document.querySelector(".copyright-year").textContent = copyrightYear;
+// const copyrightYear = new Date().getFullYear();
+// document.querySelector(".copyright-year").textContent = copyrightYear;
+
+// console.log(document.querySelector(".gender").value);

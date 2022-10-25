@@ -201,7 +201,11 @@ input {
     margin: 0px auto;
   }
 }
-
+@media (max-width: 1115px) {
+  .header .logo {
+    margin: 0 auto;
+  }
+}
 @media (max-width: 767px) {
   .header .main-nav {
     margin: auto;
@@ -220,7 +224,7 @@ input {
   margin: 100px auto;
 }
 .landing-section {
-  background-image: url("../imgs/landing-section.jpg");
+  background-image: url("../imgs/landing-section-img.jpg");
   background-size: cover;
   object-fit: fill;
   background-repeat: no-repeat;
@@ -410,6 +414,65 @@ footer {
   margin-top: 100px;
   background-color: #ededed;
 }
+footer .footer-container {
+  display: flex;
+  /* align-items: center; */
+}
+footer .footer-container img,
+footer .footer-container .box {
+  margin: 20px auto;
+  flex: 1;
+}
+footer .footer-container img {
+  width: 50%;
+  margin: 0 50%;
+  transform: translateX(-50%);
+}
+footer .footer-container .box h5 {
+  font-size: 20px;
+  text-align: center;
+}
+footer .footer-container .box p {
+  line-height: 1.8;
+  margin: 20px auto;
+  max-width: 485px;
+}
+footer .footer-container .box ul {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+}
+footer .footer-container .box ul li {
+  display: flex;
+  margin-top: 10px;
+}
+footer .footer-container .box ul li span {
+  display: block;
+  padding-left: 20px;
+}
+footer .footer-container .box ul li a {
+  color: #000;
+  padding-left: 25px;
+}
+footer .footer-container box ul .mail {
+  padding-left: 16px;
+}
+footer .footer-container .box ul li i {
+  display: block;
+  font-size: 20px;
+  color: #0077ff;
+}
+@media (max-width: 991px) {
+  footer .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  footer .footer-container .box ul {
+    width: fit-content;
+  }
+}
+
 /* End Footer */
 
 /* Media Query */

@@ -415,12 +415,25 @@
                 id="email"
                 class="email"
               />
+              <label for="phone-no">phone number</label>
+              <input type="text" required id="phone-no" class="phone-no" />
+              <label for="gender">gender</label>
+              <input
+                list="gender"
+                name="gender"
+                class="gender-input"
+                placeholder=""
+              />
+              <datalist id="gender">
+                <option value="male"></option>
+                <option value="female"></option>
+              </datalist>
+
               <label for="">upload copy of a valid passport</label>
               <input
                 type="file"
                 accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv"
                 aria-invalid="false"
-                required
                 id=""
                 class=""
               />
@@ -432,7 +445,6 @@
                 id=""
                 class=""
               />
-
               <input type="submit" value="send" id="submit" class="submit" />
             </form>
           </div>
@@ -467,13 +479,40 @@
     </section>
     <!-- End Contact Us Section -->
     <!-- Satrt Footer -->
-    <!-- <footer>
+    <footer>
       <div class="container">
-        <div class="box"><img src="../imgs/logo.jpeg" alt="" /></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="footer-container">
+          <div class="box">
+            <h5>who us</h5>
+            <p>
+              Al-Noor Fresno Umrah is a leading company on providing Umrah and
+              Umrah visas in the united states of America.
+            </p>
+          </div>
+          <div class="box">
+            <img src="../imgs/logo.jpeg" alt="our logo" />
+          </div>
+          <div class="box contact">
+            <h5>contact</h5>
+            <ul>
+              <li>
+                <i class="fa-solid fa-envelope-circle-check"></i>
+                <span class="mail">fresnoumrah@gmail.com</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i> <span>+1 (559) 709-2222</span>
+              </li>
+              <li>
+                <i class="fa-brands fa-whatsapp"></i>
+                <a href="https://api.whatsapp.com/send?phone=15597092222"
+                  >WhatsApp
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- End Footer -->
     <script src="../js/main.js"></script>
   </body>
