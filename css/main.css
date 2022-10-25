@@ -271,7 +271,6 @@ input {
   color: #0077ff;
 }
 .countries-with-flags {
-  /* background-color: #d9d9d9; */
   background-color: #fff;
   display: flex;
   flex-wrap: wrap;
@@ -290,10 +289,16 @@ input {
   align-items: center;
   width: 150px;
 }
+
+.country-with-flag span {
+  text-transform: uppercase;
+}
+
 .contact-us .intro {
   line-height: 1.8;
   color: #333;
 }
+/* Start Contact Style */
 .contact-method {
   background-color: #347bb4;
   color: white;
@@ -301,7 +306,6 @@ input {
   padding: 5px;
   margin: 40px 0 20px 0;
 }
-
 .visas {
   margin: 100px auto;
   background-color: #ededed;
@@ -325,9 +329,11 @@ input {
   margin: 15px auto;
 }
 .rules-and-validity-side p,
-.details p {
+.details p,
+.fees p {
   text-transform: capitalize;
   width: fit-content;
+  font-weight: bold;
   border-bottom: 1px dotted #000;
   margin-bottom: 15px;
 }
@@ -335,15 +341,16 @@ input {
   padding: 20px;
 }
 .rules-and-validity-side ul,
-.details ul {
+.details ul,
+.fees ul {
   list-style: inside;
   padding-left: 20px;
 }
 .rules-and-validity-side ul li,
-.details ul li {
+.details ul li,
+.fees li {
   width: fit-content;
 }
-
 form {
   display: flex;
   flex-direction: column;
@@ -427,5 +434,9 @@ footer {
   }
   .contact-method {
     margin: 20px auto;
+  }
+  .contact-us li span {
+    display: block;
+    margin-top: 15px;
   }
 }
