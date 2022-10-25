@@ -290,9 +290,8 @@ input {
 }
 
 .landing-section .text > h1 {
-  font-weight: 900;
   color: #0077ff;
-  letter-spacing: 1px;
+  letter-spacing: -1px;
   text-transform: capitalize;
 }
 
