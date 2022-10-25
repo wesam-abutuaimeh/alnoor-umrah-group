@@ -223,6 +223,7 @@ input {
 .available-countries {
   margin: 100px auto;
 }
+/* 
 .landing-section {
   background-image: url("../imgs/landing-section-img.jpg");
   background-size: cover;
@@ -237,7 +238,115 @@ input {
   width: 100%;
   height: 100%;
   background-color: #000000b3;
+} */
+
+/* Start landing Sectio Style*/
+.landing-section {
+  position: relative;
 }
+
+.landing-section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ececec;
+  height: calc(100%);
+  z-index: -10;
+  transform: skewY(16deg);
+  -webkit-transform: skewY(-6deg);
+  -moz-transform: skewY(6deg);
+  -ms-transform: skewY(6deg);
+  -o-transform: skewY(6deg);
+  transform-origin: top right;
+  top: -200px;
+}
+
+.landing-section .image > img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.landing-section .container {
+  min-height: calc(100vh - 92px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-section .arrow-toDown {
+  position: relative;
+}
+
+.landing-section .text {
+  flex: 1;
+}
+
+@media (max-width: 991px) {
+  .landing-section .arrow-toDown {
+    top: -40px;
+  }
+}
+
+.landing-section .text > h1 {
+  font-weight: 900;
+  color: #0077ff;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.landing-section .text > p {
+  max-width: 466px;
+  color: #000;
+  line-height: 1.75;
+  font-size: 20px;
+  padding: 0;
+  text-align: start;
+}
+
+@media (max-width: 991px) {
+  .landing-section .text {
+    text-align: center;
+  }
+
+  .landing-section .text p {
+    line-height: 1.75;
+    text-align: start;
+    padding: 0;
+    margin: 50px auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .landing-section .image {
+    display: none;
+  }
+}
+
+.landing-section .arrow-toDown > a {
+  position: absolute;
+  font-size: 30px;
+  color: #0077ff;
+  left: 50%;
+  bottom: 30px;
+  transform: translatex(-50%);
+  -webkit-transform: translatex(-50%);
+  -moz-transform: translatex(-50%);
+  -ms-transform: translatex(-50%);
+  -o-transform: translatex(-50%);
+}
+
+.landing-section .arrow-toDown > a:hover {
+  color: #333;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+/* End Landing Section Style*/
 .Saudi-electronic-visa h2,
 .available-countries h2 {
   background-color: #ededed;
@@ -416,7 +525,6 @@ footer {
 }
 footer .footer-container {
   display: flex;
-  /* align-items: center; */
 }
 footer .footer-container img,
 footer .footer-container .box {
@@ -462,11 +570,24 @@ footer .footer-container .box ul li i {
   font-size: 20px;
   color: #0077ff;
 }
-@media (max-width: 991px) {
+
+@media (max-width: 767px) {
   footer .footer-container {
     flex-direction: column;
+  }
+}
+@media (max-width: 991px) {
+  footer .footer-container {
     align-items: center;
     text-align: center;
+  }
+  footer .footer-container img {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    margin: 0;
   }
   footer .footer-container .box ul {
     width: fit-content;
