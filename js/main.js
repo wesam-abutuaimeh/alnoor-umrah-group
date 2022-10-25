@@ -40,8 +40,5 @@ submit.onclick = (e) => {
   e.preventDefault();
 };
 
-//  increace year copyright per year auto
-// const copyrightYear = new Date().getFullYear();
-// document.querySelector(".copyright-year").textContent = copyrightYear;
-
-// console.log(document.querySelector(".gender").value);
+const copyrightYear = new Date().getFullYear();
+document.querySelector(".copyright").textContent = copyrightYear;
