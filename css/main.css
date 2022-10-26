@@ -307,15 +307,7 @@ input {
   color: #0077ff;
   letter-spacing: -1px;
   text-transform: capitalize;
-}
-
-.landing-section .text > p {
-  max-width: 466px;
-  color: #000;
-  line-height: 1.75;
-  font-size: 20px;
-  padding: 0;
-  text-align: start;
+  line-height: 1.4;
 }
 
 @media (max-width: 991px) {
@@ -558,6 +550,7 @@ footer .footer-container img {
 footer .footer-container .box h5 {
   font-size: 20px;
   text-align: center;
+  text-transform: capitalize;
 }
 footer .footer-container .box p {
   line-height: 1.8;
