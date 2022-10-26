@@ -223,22 +223,6 @@ input {
 .available-countries {
   margin: 100px auto;
 }
-/* 
-.landing-section {
-  background-image: url("../imgs/landing-section-img.jpg");
-  background-size: cover;
-  object-fit: fill;
-  background-repeat: no-repeat;
-  height: calc(100vh - 90px);
-  position: relative;
-}
-.landing-section::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #000000b3;
-} */
 
 /* Start landing Sectio Style*/
 .landing-section {
