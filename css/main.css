@@ -263,8 +263,8 @@ input {
 }
 
 .landing-section .image > img {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
 }
 
@@ -277,11 +277,11 @@ input {
 @media (max-width: 991px) {
   .landing-section .container {
     flex-direction: column-reverse;
-    margin: 100px 0;
+    margin: 41px 0;
   }
   .landing-section .image > img {
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -320,18 +320,6 @@ input {
     text-align: center;
     padding: 0;
     margin: 50px auto;
-  }
-}
-
-@media (max-width: 991px) {
-  .landing-section .image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
   }
 }
 
