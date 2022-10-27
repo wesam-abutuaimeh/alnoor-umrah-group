@@ -441,21 +441,27 @@
                 <option value="female"></option>
               </datalist>
 
-              <label for="">upload copy of a valid passport</label>
+              <label for="valid-passport"
+                >upload copy of a valid passport</label
+              >
               <input
                 type="file"
                 accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv"
                 aria-invalid="false"
-                id=""
-                class=""
+                id="valid-passport"
+                class="valid-passport"
+                required
+                multiple
               />
               <label for="">upload your personal photo</label>
               <input
                 type="file"
                 accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv"
                 aria-invalid="false"
-                id=""
-                class=""
+                id="personal-photo"
+                class="personal-photo"
+                required
+                multiple
               />
               <input type="submit" value="send" id="submit" class="submit" />
             </form>
